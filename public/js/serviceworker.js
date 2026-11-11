@@ -1,3 +1,4 @@
+/*
 const assets = [
   "./",
   "css/style.css",
@@ -56,3 +57,5 @@ self.addEventListener("fetch", function (evt) {
     })
   );
 });
+
+*/

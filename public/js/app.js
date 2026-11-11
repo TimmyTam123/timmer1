@@ -1,3 +1,4 @@
+/*
 let result = "";
 fetch("./frontEndData.json")
   .then(function (response) {
@@ -31,3 +32,4 @@ if ("serviceWorker" in navigator) {
       .catch((err) => console.log("service worker not registered", err));
   });
 }
+*/
