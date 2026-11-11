@@ -1,4 +1,4 @@
-/*
+
 let result = "";
 fetch("./frontEndData.json")
   .then(function (response) {

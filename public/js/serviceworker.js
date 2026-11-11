@@ -1,4 +1,4 @@
-/*
+
 const assets = [
   "./",
   "css/style.css",
