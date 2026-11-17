@@ -1,10 +1,52 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>yo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>timmer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <h1>hi guys</h1>
+    <main class="timer">
+      <div class="display" id="display" aria-live="off">00:00:00</div>
+
+      <div class="buttons">
+        <button id="toggle" class="btn" aria-label="Start">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z" />
+          </svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="6" y="4" width="4.5" height="16" rx="1.2" />
+            <rect x="13.5" y="4" width="4.5" height="16" rx="1.2" />
+          </svg>
+        </button>
+
+        <button id="stats" class="btn" aria-label="Stats">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="4" y="13" width="4" height="7" rx="0.5" />
+            <rect x="10" y="9" width="4" height="11" rx="0.5" />
+            <rect x="16" y="4" width="4" height="16" rx="0.5" />
+          </svg>
+        </button>
+
+        <button id="settings" class="btn" aria-label="Settings">
+          <svg viewBox="0 0 24 24" class="outline" aria-hidden="true">
+            <path
+              d="M10.3 3h3.4l.5 2.4 1.6.9 2.3-.8 1.7 2.9-1.8 1.6v1.9l1.8 1.6-1.7 2.9-2.3-.8-1.6.9-.5 2.4h-3.4l-.5-2.4-1.6-.9-2.3.8-1.7-2.9 1.8-1.6v-1.9L4.2 8.4l1.7-2.9 2.3.8 1.6-.9z"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "timmer", "runtimeExecutable": "node", "runtimeArgs": ["index.js"], "port": 5000 }
+  ]
+}
