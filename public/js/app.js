@@ -1,7 +1,4 @@
-// Every start/stop is recorded as a session: { start, end } in epoch ms (end = null while running).
-// That's the same shape a future `sessions` DB table will have (plus user_id), so swapping
-// loadSessions/saveSessions for fetch() calls to the server is the only change needed later.
-// ponytail: localStorage only, swap for API calls once logins + DB exist.
+
 const STORAGE_KEY = "sessions";
 
 function loadSessions() {
@@ -16,8 +13,7 @@ function saveSessions(sessions) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
 }
 
-// Today's total = time overlapping [local midnight, now]. This is the daily reset:
-// nothing gets deleted, yesterday's sessions just stop counting (and stay for stats).
+
 function todayTotal(sessions, now) {
   const midnight = new Date(now).setHours(0, 0, 0, 0);
   let total = 0;
@@ -57,7 +53,6 @@ toggle.addEventListener("click", () => {
   render();
 });
 
-// Keep tabs in sync if the timer is open twice.
 window.addEventListener("storage", (e) => {
   if (e.key === STORAGE_KEY) {
     sessions = loadSessions();
