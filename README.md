@@ -19,4 +19,4 @@ november 16th: continued making webite. started adding colours because i finishe
 
 novemebr 18th: finished timer javascript because I hate javascript. now im thinking about making the stats but i really want to do this later.
 
-november 20th:
+november 20th: I now need to make pomodoro and started ideated
