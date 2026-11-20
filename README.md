@@ -15,4 +15,8 @@ november 12th: scraped repo and deleted everything that was not needed. did not 
 
 november 13th: started on website. made divs for the html. attatched new css and javascript. halfway through making the skeleton.
 
-november 16th: continued making webite. started adding colours and 
+november 16th: continued making webite. started adding colours because i finished my skeleton.
+
+novemebr 18th: finished timer javascript because I hate javascript. now im thinking about making the stats but i really want to do this later.
+
+november 20th:
